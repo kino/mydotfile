@@ -1,0 +1,8 @@
+#!/bin/bash
+E_NOARGS=65
+if [ $# -eq 0 ];then
+	echo "usage: $0 server_ip"
+	exit  $E_NOARGS
+fi
+
+ssh -i /home/wangxingchao/Desktop/wuxi/id_rsa -p 58422 root@$1

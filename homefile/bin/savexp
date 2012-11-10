@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh $XP_SERVER "/home/wangxingchao/savexp"

@@ -1,0 +1,3 @@
+#!/bin/bash
+#VirtualBox --startvm winxp
+vboxheadless --startvm WinXP --vrdp=on& 

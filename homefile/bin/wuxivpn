@@ -1,0 +1,4 @@
+#!/bin/bash
+cd  /home/wangxingchao/Desktop/wuxi
+pwd
+sudo openvpn --config WuXi.ovpn

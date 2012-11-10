@@ -1,0 +1,58 @@
+#!/bin/bash
+
+usage()
+{
+  echo "NAME"
+  echo "     online_hosts [node] - list online servers."
+  echo "" 
+  echo "SYNOPSIS"
+  echo "      online_hosts"
+  echo "" 
+  echo "DESCRIPTION"
+  echo "" 
+  echo "      node "
+  echo "" 
+  echo "UPDATE" 
+  echo "      2011-04-25   kevin.fujiang@gmail.com"
+}
+
+host_directory=/home/xuxiaorong/Documents/profile/online_hosts
+node=""
+
+if [ $# -gt 0 ]
+then
+  node="$1"
+fi
+if [ $# -gt 1 ] 
+then 
+  type="$2"
+fi
+
+echo "node=$node"
+echo "type=$type"
+
+
+if [ $node ]
+then
+   listFile="$( find $host_directory -type f -name $node)"
+else
+   listFile="$( find $host_directory -type f )"
+fi
+
+
+for file in "$listFile"
+do
+  if [ $type ] 
+  then 
+    grep "$type" "$file"
+  else
+    cat "$file"
+  fi 
+done
+
+exit 0
+if [ $# -lt 1 ]
+then 
+  usage
+  exit 0
+fi

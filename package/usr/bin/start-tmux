@@ -1,0 +1,6 @@
+#!/bin/sh
+if  ps -ef | grep "tmux-main" | grep -v grep | grep -v start-tmux; then
+   xterm -title tmux-main -e sh -c 'tmux -u a'
+else
+   xterm -title tmux-main -e sh -c 'tmux -u'
+fi

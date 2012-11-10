@@ -1,0 +1,4 @@
+#!/bin/bash
+echo $0
+#rdesktop -A -0 -s "C:\seamlessrdp\seamlessrdpshell.exe C:\Program Files\Microsoft Office\Office12\WINWORD.EXE" 192.168.129.135:3389 -u administrator -p xxxx
+rdesktop 10.241.34.44:8389

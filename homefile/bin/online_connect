@@ -1,0 +1,2 @@
+#!/bin/bash
+for D in $(./online_hosts wx frontend | tail -1 | sed "s/frontend//");do xterm -e  /usr/bin/ssh -p 58422 -i /home/xuxiaorong/Documents/profile/online_key/OpensshIdentity root@$D & done

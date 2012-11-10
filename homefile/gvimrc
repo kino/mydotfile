@@ -1,0 +1,14 @@
+"把gui的工具栏去掉(要去掉，把等号前面的加号变成一个减号即可)
+set guioptions-=T
+
+"把gui的右边的滑动条去掉
+set guioptions-=r
+
+"把gui的左边的滑动条去掉
+set guioptions-=L
+
+"把gui的菜单去掉
+set guioptions-=m
+"高度宽度
+set lines=300
+set columns=280

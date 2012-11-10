@@ -1,0 +1,4 @@
+#!/bin/bash
+#rdesktop 127.0.0.1:3389
+#rdesktop $XP_SERVER:3389 &
+rdesktop 10.241.12.165:3389 &

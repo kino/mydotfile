@@ -1,0 +1,5 @@
+#!/bin/bash
+set -x 
+source ~/.jdk5rc
+set +x
+java -version

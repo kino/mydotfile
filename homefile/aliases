@@ -1,0 +1,176 @@
+#{{{---------------------------alias---------------------------------------
+# alias and listing colors
+alias -g A="|awk"
+alias -g C="|wc"
+alias -g E="|sed"
+alias -g G="|grep"
+alias -g H="|head"
+alias -g L="|less"
+alias -g R="|tac"
+alias -g S="|sort"
+alias -g T="|tail"
+alias -g X="|xargs"
+alias -g N="> /dev/null"
+
+#file types
+[[ -x /usr/bin/apvlv ]] && alias -s pdf=apvlv
+alias -s ps=gv
+for i in jpg png;           alias -s $i=gqview
+for i in avi rmvb wmv;      alias -s $i=mplayer
+for i in rar zip 7z lzma;   alias -s $i="7z x"
+
+export GREP_COLOR='31;1'
+#no correct for mkdir mv and cp
+for i in mkdir mv cp;       alias $i="nocorrect $i"
+
+alias vi=vim
+alias grep='grep -I --color=always'
+alias egrep='egrep -I --color=always'
+alias cal='cal -3m'
+alias ee='emacsclient -t'
+alias et='emacsclient -t'
+alias ec='emacsclient -c'
+alias freeze='kill -STOP'
+alias ls='ls  --color=auto -X --time-style="+[33m[[32m%Y-%m-%d [35m%k:%M[33m][m"'
+alias ll='ls -l'
+alias df='df -Th'
+alias du='du -h'
+alias psg='ps aux | grep'
+alias cd2='cd ../../'
+alias cd3='cd ../../../'
+alias cd4='cd ../../../../'
+alias cd5='cd ../../../../..'
+
+#show directories size
+alias dud='du -s *(/)'
+#date for US and CN
+alias adate='for i in US/Eastern Australia/{Brisbane,Sydney} Asia/{Hong_Kong,Singapore} Europe/Paris; do printf %-22s "$i:";TZ=$i date +"%m-%d %a %H:%M";done'
+#bloomberg radio
+alias bloomberg='mplayer mms://media2.bloomberg.com/wbbr_sirus.asf'
+#alias which='alias | /usr/bin/which --read-alias'
+alias pyprof='python -m cProfile'
+alias python='nice python'
+alias ri='ri -f ansi'
+alias history='history 1'       #zsh specific
+#alias mplayer='mplayer -cache 512'
+alias zhcon='zhcon --utf8'
+alias vless="/usr/share/vim/macros/less.sh"
+del() {mv -vif -- $* ~/.Trash}
+alias m='mutt'
+alias port='netstat -ntlp'      #opening ports
+alias e264='mencoder -vf harddup -ovc x264 -x264encopts crf=22:subme=5:frameref=2:8x8dct:bframes=3:weight_b:b_pyramid -oac mp3lame -lameopts aq=7:mode=0:vol=1.2:vbr=2:q=6 -srate 32000'
+#alias tree="tree --dirsfirst"
+alias top10='print -l  ${(o)history%% *} | uniq -c | sort -nr | head -n 10'
+alias lstree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
+#alias tt="vim +'set spell' ~/doc/TODO.otl"
+alias mlychee="sshfs -p 2023 roy@lychee: /home/roylez/remote/lychee"
+alias gfw="ssh -o
+ServerAliveInterval=60 -CNfg -D 7777 -l roy lychee &>/dev/null &"
+#alias rtm="twitter d rtm"
+#alias rtorrent="screen rtorrent"
+
+# ================================================================
+alias dev33='10.241.12.33'
+alias dev34='10.241.12.34'
+alias dev38='10.241.12.38'
+alias dev38='10.241.12.38'
+alias dev39='10.241.12.39'
+alias dev40='10.241.12.40'
+alias dev42='10.241.12.42'
+alias dev43='10.241.12.43'
+alias dev44='10.241.12.44'
+alias dev45='10.241.12.45'
+alias dev46='10.241.12.46'
+alias dev47='10.241.12.47'
+alias dev48='10.241.12.48'
+alias dev49='10.241.12.49'
+alias dev50='10.241.12.50'
+alias dev128='10.241.12.128'
+alias dev129='10.241.12.129'
+alias dev130='10.241.12.130'
+alias dev131='10.241.12.131'
+alias dev164='10.241.12.164'
+alias dev165='10.241.12.165'
+alias dev185='10.241.12.185'
+alias dev186='10.241.12.186'
+alias dev187='10.241.12.187'
+alias dev188='10.241.12.188'
+alias dev189='10.241.12.189'
+alias dev190='10.241.12.190'
+alias dev191='10.241.12.191'
+alias dev192='10.241.12.192'
+
+
+alias ssh33='ssh wangxingchao@10.241.12.33'
+alias ssh34='ssh wangxingchao@10.241.12.34'
+alias ssh38='ssh wangxingchao@10.241.12.38'
+alias ssh38='ssh wangxingchao@10.241.12.38'
+alias ssh39='ssh wangxingchao@10.241.12.39'
+alias ssh40='ssh wangxingchao@10.241.12.40'
+alias ssh42='ssh wangxingchao@10.241.12.42'
+alias ssh43='ssh wangxingchao@10.241.12.43'
+alias ssh44='ssh wangxingchao@10.241.12.44'
+alias ssh45='ssh wangxingchao@10.241.12.45'
+alias ssh46='ssh wangxingchao@10.241.12.46'
+alias ssh47='ssh wangxingchao@10.241.12.47'
+alias ssh48='ssh wangxingchao@10.241.12.48'
+alias prod48='ssh prod@10.241.12.48'
+alias test48='ssh test@10.241.12.48'
+alias dev48='ssh development@10.241.12.48'
+alias ssh49='ssh wangxingchao@10.241.12.49'
+alias ssh50='ssh wangxingchao@10.241.12.50'
+alias ssh128='ssh wangxingchao@10.241.12.128'
+alias ssh129='ssh wangxingchao@10.241.12.129'
+alias ssh130='ssh wangxingchao@10.241.12.130'
+alias ssh131='ssh wangxingchao@10.241.12.131'
+alias ssh164='ssh wangxingchao@10.241.12.164'
+alias ssh165='ssh wangxingchao@10.241.12.165'
+alias ssh167='ssh wangxingchao@10.241.12.167'
+alias ssh169='ssh wangxingchao@10.241.12.169'
+
+#mail group : web
+alias ssh185='ssh wangxingchao@10.241.12.185'
+alias ssh186='ssh wangxingchao@10.241.12.186'
+
+#mail group : mta
+alias ssh187='ssh wangxingchao@10.241.12.187'
+alias ssh188='ssh wangxingchao@10.241.12.188'
+
+#mail group : mysql
+alias ssh189='ssh wangxingchao@10.241.12.189'
+alias ssh190='ssh wangxingchao@10.241.12.190'
+
+#mail group : free
+alias ssh191='ssh wangxingchao@10.241.12.191'
+alias ssh192='ssh wangxingchao@10.241.12.192'
+
+alias ssh37='ssh wangxingchao@10.241.14.37'
+alias dev37='10.241.14.37'
+
+alias ssh44='ssh wangxingchao@10.241.12.44'
+alias dev44='10.241.12.44'
+
+alias ssh45='ssh wangxingchao@10.241.12.45'
+alias dev45='10.241.12.45'
+
+alias psjava='ps aux | grep java | grep -v grep'
+
+alias umail_package='192.168.93.169'
+alias ssh_umail_package='ssh wangxingchao@192.168.93.169'
+
+# for jruby
+#alias jgem='jruby -S gem'
+#alias jrake='jruby -S rake'
+#alias jrails='jruby -S rails'
+
+
+alias sndavpn='sudo openconnect -v --script /etc/vpnc/vpnc-script https://webvpn.snda.com'
+alias ant='ant -Ddist.module=/home/wangxingchao/Workspace/sdo/branches/mail-dev-branch/dist/module'
+alias sd='sdcv'
+
+alias datef='date +"日期: %Y-%m-%d %H:%m"'
+
+##########################################################
+# alias for link to online
+##########################################################
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+cd ~/Work/2012TEST
+git add .
+git commit -a -m "normal"
+git push
+cd ~/vimwiki
+git add .
+git commit -a -m "normal"
+git push

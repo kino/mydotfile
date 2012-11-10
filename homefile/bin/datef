@@ -1,0 +1,2 @@
+#!/bin/bash
+date +"日期: %Y-%m-%d %H:%m"
