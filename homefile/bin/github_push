@@ -1,0 +1,12 @@
+#!/bin/bash
+
+for file in ~/github/*
+do
+    if [ -d $file ] ; then
+        echo $file
+        cd $file;
+        git status;
+        git add .;
+        git commit -m "commit $(date)"
+    fi
+done
