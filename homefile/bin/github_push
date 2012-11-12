@@ -8,5 +8,7 @@ do
         git status;
         git add .;
         git commit -m "commit $(date)"
+        git pull;
+        git push;
     fi
 done
