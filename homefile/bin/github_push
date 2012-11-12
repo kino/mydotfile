@@ -5,10 +5,16 @@ do
     if [ -d $file ] ; then
         echo $file
         cd $file;
+        echo -e "\n";
         git status;
+        echo -e "\n";
         git add .;
+        echo -e "\n";
         git commit -m "commit $(date)"
+        echo -e "\n";
         git pull;
+        echo -e "\n";
         git push;
+        echo -e "\n";
     fi
 done
