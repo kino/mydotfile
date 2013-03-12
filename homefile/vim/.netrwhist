@@ -1,7 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/wangxingchao/Dropbox/documents/linux/ubuntu/mydotfile/homefile/vim/doc'
 let g:netrw_dirhist_2='/home/wangxingchao/Dropbox/documents/linux/ubuntu/mydotfile/homefile/vim'
 let g:netrw_dirhist_3='/home/wangxingchao/Work/SndaMobileMail/res/values'
 let g:netrw_dirhist_4='/home/wangxingchao/Dropbox/idea-work/ChangAn/infrastructure/src/main/java/com/sr365/changan/infrastructure'
 let g:netrw_dirhist_5='/home/wangxingchao/Dropbox'
+let g:netrw_dirhist_6='/mnt/e/data'
