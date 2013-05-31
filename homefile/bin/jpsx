@@ -1,0 +1,2 @@
+#!/bin/bash
+jps  | awk '{print "echo \"$(pwdx "$1")/"$2"\""}'  | /bin/bash | grep -v "No such"
