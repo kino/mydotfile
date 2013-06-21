@@ -1,0 +1,234 @@
+#ControlMaster auto
+#ControlPath /tmp/ssh_mux_%h_%p_%r
+#ControlPersist 4h
+
+Host github.com
+Hostname ssh.github.com
+Port 443
+ProxyCommand corkscrew 10.0.2.2 3128 %h %p
+
+#TEST #################
+Host 176
+Hostname 192.168.81.176
+Port 1022
+User op1
+
+Host 177
+Hostname 192.168.81.177
+Port 1022
+User op1
+
+Host 178
+Hostname 192.168.81.178
+Port 1022
+User op1
+
+Host 179
+Hostname 192.168.81.179
+Port 1022
+User op1
+
+Host 166
+Hostname 192.168.83.166
+User logging
+
+Host 167
+Hostname 192.168.83.167
+User logging
+
+Host 169
+Hostname 192.168.83.169
+User logging
+
+#UAT #################
+Host 40
+Hostname 192.168.82.40
+Port 1022
+User op1
+
+Host 55
+Hostname 192.168.82.55
+Port 1022
+User op1
+
+Host 56
+Hostname 192.168.82.56
+Port 1022
+User op1
+
+Host 57
+Hostname 192.168.82.57
+Port 1022
+User op1
+
+Host 58
+Hostname 192.168.82.58
+Port 1022
+User op1
+
+Host 83
+Hostname 192.168.82.83
+User op1
+
+Host 88
+Hostname 192.168.83.88
+User op1
+Port 1022
+
+Host 3
+Hostname 192.168.82.3
+Port 1022
+User op1
+
+Host 4
+Hostname 192.168.82.4
+Port 1022
+User op1
+
+Host 5
+Hostname 192.168.82.5
+Port 1022
+User op1
+#UAT #################
+
+#Product #################
+Host p30
+Hostname 192.168.63.30
+Port 1022
+User op1
+
+Host p31
+Hostname 192.168.63.31
+Port 1022
+User op1
+
+Host p32
+Hostname 192.168.63.32
+Port 1022
+User op1
+
+Host p33
+Hostname 192.168.63.33
+Port 1022
+User op1
+
+Host p34
+Hostname 192.168.63.34
+Port 1022
+User op1
+
+Host p35
+Hostname 192.168.63.35
+Port 1022
+User op1
+
+Host p36
+Hostname 192.168.63.36
+Port 1022
+User op1
+
+Host p37
+Hostname 192.168.63.37
+Port 1022
+User op1
+
+Host p38
+Hostname 192.168.63.38
+Port 1022
+User op1
+
+Host p39
+Hostname 192.168.63.39
+Port 1022
+User op1
+
+Host p40
+Hostname 192.168.63.40
+Port 1022
+User op1
+
+
+Host p183
+Hostname 192.168.79.183
+Port 1022
+User op1
+
+Host p184
+Hostname 192.168.79.184
+Port 1022
+User op1
+
+Host p185
+Hostname 192.168.79.185
+Port 1022
+User op1
+
+Host p186
+Hostname 192.168.79.186
+Port 1022
+User op1
+
+Host p216
+Hostname 192.168.82.216 
+Port 1022
+User op1
+
+Host p217
+Hostname 192.168.82.217 
+Port 1022
+User op1
+
+Host p218
+Hostname 192.168.82.218 
+Port 1022
+User op1
+
+Host p219
+Hostname 192.168.82.219 
+Port 1022
+User op1
+
+#Product #################
+
+#AbTesting #################
+Host ab30
+Hostname 192.168.79.30
+Port 1022
+User op1
+
+Host ab31
+Hostname 192.168.79.31
+Port 1022
+User op1
+
+Host ab67
+Hostname 192.168.79.67
+Port 1022
+User op1
+
+Host ab68
+Hostname 192.168.79.68
+Port 1022
+User op1
+#AbTesting #################
+
+#LoadTest #################
+Host l100
+Hostname 192.168.83.100
+Port 1022
+User op1
+#LoadTest #################
+
+#ci  #################
+Host c234
+Hostname 192.168.83.234
+Port 22
+User op1
+#ci  #################
+
+#System  #################
+Host s132
+Hostname 192.168.83.132
+Port 22
+User ww
+#System  #################

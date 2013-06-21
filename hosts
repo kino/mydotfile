@@ -1,0 +1,99 @@
+#
+# /etc/hosts: static lookup table for host names
+#
+
+#<ip-address>	<hostname.domain.org>	<hostname>
+127.0.0.1	localhost.localdomain	localhost
+::1		localhost.localdomain	localhost
+
+
+
+#dropbox
+174.36.30.67 dropbox.com
+174.36.30.71 www.dropbox.com
+174.36.30.72 www.dropbox.com
+174.36.30.73 www.dropbox.com
+75.101.129.115 dl.dropbox.com
+75.101.159.151 dl-web.dropbox.com
+174.36.30.67 forums.dropbox.com
+174.36.30.67 wiki.dropbox.com
+
+#Google+ç”¨åˆ°
+203.208.46.29 plus.Google.com plus.google.com.hk
+203.208.46.29 talkgadget.google.com
+203.208.46.148 lh1.googleusercontent.com
+203.208.46.148 lh2.googleusercontent.com
+203.208.46.148 lh3.googleusercontent.com
+203.208.46.148 lh4.googleusercontent.com
+203.208.46.148 lh5.googleusercontent.com
+203.208.46.148 lh6.googleusercontent.com
+203.208.46.148 lh7.googleusercontent.com
+203.208.46.148 s1.googleusercontent.com
+203.208.46.148 s2.googleusercontent.com
+203.208.46.148 images1-focus-opensocial.googleusercontent.com
+203.208.46.148 images2-focus-opensocial.googleusercontent.com
+203.208.46.148 images3-focus-opensocial.googleusercontent.com
+203.208.46.148 webcache.googleusercontent.com
+203.208.46.148 picasaweb.google.com
+203.208.46.148 plus.google.com
+74.125.227.2 talkgadget.google.com
+203.208.46.163 docs.google.com
+203.208.46.163 books.google.com
+203.208.46.163 browserchannel-docs.l.google.com
+203.208.46.163 browserchannel-spreadsheets.l.google.com
+203.208.46.163 browsersync.google.com
+203.208.46.163 cache.pack.google.com
+203.208.46.163 calendar.google.com
+203.208.46.163 chatenabled.mail.google.com
+203.208.46.163 checkout.google.com
+203.208.46.163 chrome.google.com
+203.208.46.163 clients1.google.com
+203.208.46.163 clients1.googleusercontent.com
+203.208.46.163 clients2.google.com
+203.208.46.163 clients2.googleusercontent.com
+203.208.46.163 clients3.google.com
+203.208.46.163 clients3.googleusercontent.com
+203.208.46.163 clients4.google.com
+203.208.46.163 clients4.googleusercontent.com
+203.208.46.163 clients5.google.com
+203.208.46.163 clients5.googleusercontent.com
+203.208.46.163 clients6.google.com
+203.208.46.163 clients6.googleusercontent.com
+203.208.46.163 clients7.google.com
+203.208.46.163 clients7.googleusercontent.com
+203.208.46.163 code.google.com
+203.208.46.163 csi.gstatic.com
+203.208.46.163 desktop.google.com
+203.208.46.163 desktop2.google.com
+203.208.46.163 ditu.google.cn
+203.208.46.163 ditu.google.com
+203.208.46.163 dl.google.com
+
+#twitter
+199.59.148.13 oauth.twitter.com
+199.59.148.13 twitter.com
+199.59.148.13 www.twitter.com
+199.59.148.13 api.twitter.com
+199.59.148.201 search.twitter.com
+199.59.148.139 userstream.twitter.com
+199.59.148.13 ssl.twitter.com
+199.59.148.13 status.twitter.com
+199.59.148.13 assets0.twitter.com
+199.59.148.13 assets1.twitter.com
+199.59.148.13 assets2.twitter.com
+199.59.148.13 assets3.twitter.com
+199.59.148.13 static.twitter.com
+184.29.36.124 platform.twitter.com
+219.76.10.138 platform0.twitter.com
+199.59.148.206 help.twitter.com
+199.59.148.206 support.twitter.com
+209.84.4.102 si0.twimg.com
+209.84.4.102 si1.twimg.com
+209.84.4.102 si2.twimg.com
+209.84.4.102 si3.twimg.com
+209.84.4.102 si4.twimg.com
+209.84.4.102 si5.twimg.com
+
+# End of file
+#
+#
