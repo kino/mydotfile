@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/wangxingchao/Dropbox/documents/linux/ubuntu/mydotfile/homefile/vim/doc'
 let g:netrw_dirhist_2='/home/wangxingchao/Dropbox/documents/linux/ubuntu/mydotfile/homefile/vim'
 let g:netrw_dirhist_3='/home/wangxingchao/Work/SndaMobileMail/res/values'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/home/wangxingchao/Dropbox'
 let g:netrw_dirhist_6='/mnt/e/data'
 let g:netrw_dirhist_7='/etc/network.d/interfaces'
 let g:netrw_dirhist_8='/etc/network.d/examples'
+let g:netrw_dirhist_9='/tmp/zeus-0.1/conf'
